@@ -10,5 +10,10 @@ h1 {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+.infos {
+    display: flex;
+    justify-content: center;
 }

@@ -4,17 +4,24 @@
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 3em;
+    font-weight: 800;
 }
 
 
 h2 {
-    font-size: 25px
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+h3 {
+    font-weight: 100;
 }
 
 p {
@@ -22,7 +29,13 @@ p {
     font-size: 12px;
 }
 
-main {
+.container-full {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-nav {
     display: flex;
     justify-content: center;
     background-color: lightgreen;
@@ -30,20 +43,41 @@ main {
     align-items: center;
 }
 
+.container-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.container-content>h1 {
+    align-self: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
 
 img {
-    width: 180px;
-    height: 180px;
+    width: 5em;
+    height: 5em;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 1px 5px 10px grey;
+    box-shadow: 1px 5px 30px #b2bec3;
 }
 
 
 .infos {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    align-items: flex-end;
+}
+
+.liste-infos {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
     align-items: flex-end;
 }
 
@@ -79,4 +113,23 @@ a.left:before {
 a.left:hover:before {
     visibility: visible;
     width: 100%;
+}
+
+.technos {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.liste-technos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.nomsTechs {
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
 }

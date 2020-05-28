@@ -88,10 +88,6 @@ p {
     color: black;
 }
 
-.links>a {
-    text-decoration: none;
-    color: black;
-}
 
 a.left {
     position: relative;
@@ -102,7 +98,7 @@ a.left:before {
     position: absolute;
     width: 0;
     height: 1px;
-    bottom: -1px;
+    bottom: -2px;
     left: 0;
     background-color: #000;
     visibility: hidden;
@@ -159,7 +155,38 @@ hr {
     border: solid 0.2px black;
 }
 
+.footer {
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.footer li {
+    margin-left: 5px;
+    margin-right: 5px;
+    list-style: none;
+}
+
 @media only screen and (max-width: 700px) {
+
+
+    .profil {
+        width: 8em;
+        height: 8em;
+        margin-left: 16%;
+    }
+
+    .infos h1 {
+        font-size: 2.3em;
+        margin-left: 12%;
+    }
+
+    .infos h2 {
+        font-size: 1.2em;
+        margin-left: 12%;
+    }
 
     .container-content>h1 {
         align-self: center;
